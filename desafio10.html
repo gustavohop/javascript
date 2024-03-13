@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>Descobrindo se voce e Brasileiro</h1>
+     Digite o nome do seu País:<input type="text" name="txtpai" id="txtpai">
+    <input type="button" value="Descobrir" onclick="descobrir()">
+    <div id="not"></div>
+    <script>
+        function descobrir() {
+            var br = document.querySelector('input#txtpai').value
+            var not = document.querySelector('div#not')
+            not.innerHTML = `<p>Você mora em ${br}!</p>`
+            if (br == 'Brasil') {
+                not.innerHTML += `<p>Voce e Brasileiro</p>`
+            } else {
+                not.innerHTML += `<p>Voce e Estrangeiro</p>`
+            }
+            not.innerHTML += 'Obrigado pela Pesquisa'
+        }
+    </script>
+</body>
+</html>
