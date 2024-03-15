@@ -15,7 +15,7 @@
             var br = document.querySelector('input#txtpai').value
             var not = document.querySelector('div#not')
             not.innerHTML = `<p>Você mora em ${br}!</p>`
-            if (br == 'Brasil') {
+            if (br.toLowerCase() == 'brasil') {
                 not.innerHTML += `<p>Voce e Brasileiro</p>`
             } else {
                 not.innerHTML += `<p>Voce e Estrangeiro</p>`
